@@ -1,0 +1,66 @@
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.posts {
+    max-width: 720px;
+    margin: 5rem auto 0;
+
+    a {
+        display: block;
+
+        & + a {
+            margin-top: 1rem;
+            padding-top: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            margin-right: 0.3rem;
+        }
+
+        &:hover h2{
+            color: var(--Highlight)
+        }
+    }
+}
+
+
+.block {
+    display: flex;
+    
+}
+
+.dateSection {
+    display: flex;
+    margin-right: 0.7rem;
+}
+
+.userSection {
+    display: flex;
+    margin-left: 0.7rem;
+}
+
+.loadButton {
+    margin-top: 4rem;
+    background: transparent;
+    border: none;
+
+    color: var(--Highlight);
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--Heading)
+    }
+
+}

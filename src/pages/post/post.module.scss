@@ -1,0 +1,43 @@
+.banner {
+    width: 100%;
+    height: 20rem;
+}
+
+.container {
+    margin: 5rem auto 2rem;
+    max-width: 720px;
+
+    h2 {
+        margin-bottom: 1.6rem;
+        margin-top: 1.6rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.post {
+
+    ul {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        li {
+            list-style: none;
+            margin-right: 1rem;
+
+            .icon {
+                margin-right: 0.4rem;
+            }
+        }
+    }
+
+    article {
+        margin-bottom: 5rem;
+
+    }
+
+}
