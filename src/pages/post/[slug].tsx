@@ -7,10 +7,10 @@ import Prismic from '@prismicio/client';
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
 import { FiCalendar, FiClock, FiUser } from 'react-icons/fi';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
+import Comments from '../../components/Comments';
 
 interface Post {
   first_publication_date: string | null;
@@ -109,6 +109,9 @@ export default function Post({ post }: PostProps) {
             </article>
           );
         })}
+
+        <Comments />
+        
         {console.log(post)}
       </main>
     </>
